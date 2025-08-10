@@ -1,0 +1,12 @@
+{
+  "name": "danishvocab",
+  "version": "1.0.0",
+  "description": "Danish vocabulary learning app",
+  "scripts": {
+    "build:web": "node scripts/build_web.js",
+    "build:web:watch": "nodemon --watch .env --exec 'node scripts/build_web.js'"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
