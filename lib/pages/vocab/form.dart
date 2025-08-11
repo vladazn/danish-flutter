@@ -14,7 +14,7 @@ class VocabFormPage extends StatefulWidget {
 class _VocabFormPageState extends State<VocabFormPage>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
-  final List<String> _tabs = ['noun', 'verb', 'numeral', 'pronoun', 'question', 'adverb'];
+  final List<String> _tabs = ['noun', 'verb', 'adjective', 'numeral', 'pronoun', 'question', 'adverb'];
   String selectedTab = 'noun';
 
   final TextEditingController _definitionController = TextEditingController();

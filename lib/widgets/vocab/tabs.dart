@@ -15,6 +15,7 @@ class VocabTabForm extends StatelessWidget {
   static const Map<String, List<String>> _fieldsPerTab = {
     'noun': ['indefinite_singular', 'indefinite_plural'],
     'verb': ['present', 'past'],
+    'adjective': ['positive'],
     'numeral': ['cardinal', 'ordinal', 'multiplicative', 'fractional'],
     'pronoun': ['personal', 'possessive'],
     'question': ['question'],
@@ -49,6 +50,8 @@ class VocabTabForm extends StatelessWidget {
         return 'Possessive Form';
       case 'question':
         return 'Question Word';
+      case 'positive':
+        return 'Positive Form';
       case 'adverb':
         return 'Adverb Form';
       default:
@@ -82,6 +85,8 @@ class VocabTabForm extends StatelessWidget {
         return 'e.g., min (my)';
       case 'question':
         return 'e.g., hvad (what)';
+      case 'positive':
+        return 'e.g., stor (big)';
       case 'adverb':
         return 'e.g., hurtigt (quickly)';
       default:
